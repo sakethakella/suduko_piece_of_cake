@@ -180,27 +180,27 @@ def main():
     
     print("\n" + "="*50 + "\n")
     
-    # Example hard puzzle
+    # Example medium/hard puzzle
     hard_puzzle = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 3, 0, 8, 5],
-        [0, 0, 1, 0, 2, 0, 0, 0, 0],
-        [0, 0, 0, 5, 0, 7, 0, 0, 0],
-        [0, 0, 4, 0, 0, 0, 1, 0, 0],
-        [0, 9, 0, 0, 0, 0, 0, 0, 0],
-        [5, 0, 0, 0, 0, 0, 0, 7, 3],
-        [0, 0, 2, 0, 1, 0, 0, 0, 0],
-        [0, 0, 0, 0, 4, 0, 0, 0, 9]
+        [0, 0, 0, 2, 6, 0, 7, 0, 1],
+        [6, 8, 0, 0, 7, 0, 0, 9, 0],
+        [1, 9, 0, 0, 0, 4, 5, 0, 0],
+        [8, 2, 0, 1, 0, 0, 0, 4, 0],
+        [0, 0, 4, 6, 0, 2, 9, 0, 0],
+        [0, 5, 0, 0, 0, 3, 0, 2, 8],
+        [0, 0, 9, 3, 0, 0, 0, 7, 4],
+        [0, 4, 0, 0, 5, 0, 0, 3, 6],
+        [7, 0, 3, 0, 1, 8, 0, 0, 0]
     ]
     
-    print("Hard Sudoku Puzzle:")
+    print("Medium/Hard Sudoku Puzzle:")
     SudokuSolver.print_grid(hard_puzzle)
     print()
     
     solver = SudokuSolver(hard_puzzle)
     solution = solver.solve()
     
-    print("Solved Hard Sudoku:")
+    print("Solved Medium/Hard Sudoku:")
     SudokuSolver.print_grid(solution)
     print()
     
